@@ -1,6 +1,9 @@
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
+header{
+    text-align: center;
+}
 .view{
     display: flex;
     justify-content: space-around;
@@ -16,6 +19,7 @@ body{
     padding: 9px 15px;
 }
 .slide{
+    margin-bottom: 10px;
     display:flex;
-    gap: 10px;
+    gap: 50px;
 }
