@@ -12,9 +12,21 @@
         <h4>Visualize how sorting and search algorithms work</h4>
     </header>
     <main>
+        <div class="slide">
+         <div class="slider">
+                    <label for="sizeSlider">Array Size:</label>
+                    <input type="range" id="sizeSlider" min="10" max="100" value="30" oninput="sizedisp()">
+                    <span id="sizeValue">30 elements</span>
+        </div>
+        <div class="slider">
+                    <label for="rangeSlider">Value Range:</label>
+                    <input type="range" id="rangeSlider" min="5" max="200" value="100" oninput="rangedisp()">
+                    <span id="rangeValue">5-100</span>
+        </div>
+        </div>
         <div class="view">
         <div id="btn-d">
-            <button class="btn1">Generate New Array</button>
+            <button class="btn1" onclick="randomArray()">Generate New Array</button>
             <button class="btn1">Start Visualization</button>
             <button class="btn1">Pause/Resume</button>
             <button class="btn1">Reset</button>
@@ -33,6 +45,11 @@
                 </select>
         </div>
         </div>
+         
+        <div id="display">
+
+        </div>
     </main>
+<script src="index.js"></script>    
 </body>
 </html>
