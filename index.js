@@ -3,7 +3,7 @@ const range=document.getElementById("rangeSlider")
 let arraysizedisp=document.getElementById("sizeValue")
 let rangesizedisp=document.getElementById("rangeValue")
 function sizedisp(){
-arraysizedisp.textContent=`${arraySize.value} elements`
+let arrsize=Math.random()*arraySize.value
 }
 function rangedisp(){
 rangesizedisp.textContent=`5- ${range.value}`
