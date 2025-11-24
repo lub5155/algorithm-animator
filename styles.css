@@ -1,0 +1,17 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.view{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+.btn1{
+    width: 150px;
+    padding: 9px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#algo{
+    padding: 9px 15px;
+}
