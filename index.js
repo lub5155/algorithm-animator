@@ -3,6 +3,7 @@ const range=document.getElementById("rangeSlider")
 let arraysizedisp=document.getElementById("sizeValue")
 let rangesizedisp=document.getElementById("rangeValue")
 const algo=document.getElementById("algo")
+const displayDiv = document.getElementById('display')
 let arrRand=[]
 function sizedisp(){
 arraysizedisp.textContent=`${arraySize.value} elements`
@@ -19,7 +20,6 @@ console.log(arrRand)
 displayArray()
 }
 function displayArray(){
-    const displayDiv = document.getElementById('display')
     displayDiv.innerHTML = '' 
     arrRand.forEach(value => {
         const bar = document.createElement('div')
@@ -28,6 +28,9 @@ function displayArray(){
         bar.textContent=value
         displayDiv.appendChild(bar)
     })
+}
+function sleep() {
+    return new Promise(resolve => setTimeout(resolve, 500));
 }
 function algoselct(){
     if(algo.value=="bubble"){
