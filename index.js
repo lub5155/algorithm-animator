@@ -29,13 +29,17 @@ function displayArray(){
         displayDiv.appendChild(bar)
     })
 }
-function sleep() {
-    return new Promise(resolve => setTimeout(resolve, 300));
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 function algoselct(){
     if(algo.value=="bubble"){
         bubblesrt();
     }else if(algo.value=="selection"){
-        selectionsrt();
+        selectionsrt(arrRand);
     }
+}
+function rst(){
+    arrRand=[]
+    displayArray();
 }
