@@ -6,6 +6,10 @@ body{
 header{
     text-align: center;
 }
+#title{
+    color:  #3b82f6;
+    text-decoration:underline white;
+}
 .view{
     display: flex;
     justify-content: space-around;
@@ -26,6 +30,7 @@ header{
     color: #f8fafc;
     font-weight: 600;
     border-radius: 10px;
+    cursor: pointer;
 }
 .slide{
     margin-bottom: 10px;
