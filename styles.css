@@ -37,3 +37,15 @@ header{
     display:flex;
     gap: 50px;
 }
+.display{
+    width:80%;
+    background-color: #1e293b;
+    display: flex;
+    flex-direction: column;
+    
+}
+.array-bar{
+    background-color: #06d6a0;
+    margin: 10px;
+    width: 30px;
+}
