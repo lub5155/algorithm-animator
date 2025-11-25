@@ -1,5 +1,5 @@
 body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 header{
     text-align: center;
@@ -10,7 +10,7 @@ header{
     align-items: start;
 }
 .btn1{
-    width: 150px;
+    width: auto;
     padding: 9px 15px;
     border-radius: 20px;
     cursor: pointer;
