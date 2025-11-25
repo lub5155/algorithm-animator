@@ -30,7 +30,7 @@ function displayArray(){
     })
 }
 function sleep() {
-    return new Promise(resolve => setTimeout(resolve, 1000));
+    return new Promise(resolve => setTimeout(resolve, 300));
 }
 function algoselct(){
     if(algo.value=="bubble"){
