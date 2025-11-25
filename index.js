@@ -19,11 +19,12 @@ displayArray()
 }
 function displayArray(){
     const displayDiv = document.getElementById('display')
-    displayDiv.innerHTML = '' // Clear previous
+    displayDiv.innerHTML = '' 
     arrRand.forEach(value => {
         const bar = document.createElement('div')
         bar.className = 'array-bar'
-        bar.style.height = `${value}px` // Or scale this value
+        bar.style.height = `${value+100}px`
+        bar.textContent=value
         displayDiv.appendChild(bar)
     })
     console.log(arrRand)
