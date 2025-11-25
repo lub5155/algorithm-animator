@@ -2,6 +2,7 @@ const arraySize=document.getElementById("sizeSlider")
 const range=document.getElementById("rangeSlider")
 let arraysizedisp=document.getElementById("sizeValue")
 let rangesizedisp=document.getElementById("rangeValue")
+const algo=document.getElementById("algo")
 let arrRand=[]
 function sizedisp(){
 arraysizedisp.textContent=`${arraySize.value} elements`
@@ -27,5 +28,9 @@ function displayArray(){
         bar.textContent=value
         displayDiv.appendChild(bar)
     })
-    console.log(arrRand)
+}
+function algoselct(){
+    if(algo.value=="bubble"){
+        bubblesrt();
+    }
 }
