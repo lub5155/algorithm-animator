@@ -8,7 +8,7 @@ header{
 }
 #title{
     color:  #3b82f6;
-    text-decoration:underline white;
+    border-bottom: 5px solid #f8fafc;
 }
 .view{
     display: flex;
