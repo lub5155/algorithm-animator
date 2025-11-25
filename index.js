@@ -13,6 +13,7 @@ rangesizedisp.textContent=`5- ${range.value}`
 }
 function randomArray(){
 arrRand=[]
+displayDiv.innerHTML = '' 
 for(let i=0;i<arraySize.value;i++){
 arrRand.push(Math.floor((Math.random()*(range.value-5))+5))
 }
