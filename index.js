@@ -41,6 +41,7 @@ function algoselct(){
     }
 }
 function rst(){
+    displayDiv.innerHTML = '' 
     arrRand=[]
     displayArray();
 }
