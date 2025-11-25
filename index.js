@@ -35,5 +35,7 @@ function sleep() {
 function algoselct(){
     if(algo.value=="bubble"){
         bubblesrt();
+    }else if(algo.value=="selection"){
+        selectionsrt();
     }
 }
