@@ -13,38 +13,40 @@
     </header>
     <main>
         <div class="slide">
-         <div class="slider">
-                    <label for="sizeSlider">Array Size:</label>
-                    <input type="range" id="sizeSlider" min="10" max="30" value="30" oninput="sizedisp()">
-                    <span id="sizeValue">30 elements</span>
-        </div>
-        <div class="slider">
-                    <label for="rangeSlider">Value Range:</label>
-                    <input type="range" id="rangeSlider" min="5" max="200" value="100" oninput="rangedisp()">
-                    <span id="rangeValue">5-100</span>
-        </div>
+            <div class="slider">
+                        <label for="sizeSlider">Array Size:</label>
+                        <input type="range" id="sizeSlider" min="10" max="30" value="30" oninput="sizedisp()">
+                        <span id="sizeValue">30 elements</span>
+            </div>
+            <div class="slider">
+                        <label for="rangeSlider">Value Range:</label>
+                        <input type="range" id="rangeSlider" min="5" max="200" value="100" oninput="rangedisp()">
+                        <span id="rangeValue">5-100</span>
+            </div>
         </div>
         <div class="view">
-        <div id="btn-d">
-            <button class="btn1" onclick="randomArray()" style="background-color: #3b82f6 ;">Generate New Array</button>
-            <button class="btn1" onclick="algoselct()" style="background-color: #3b82f6 ;">Start Visualization</button>
-            <button class="btn1">Pause/Resume</button>
-            <button class="btn1" onclick="rst()">Reset</button>
-            <button class="btn1">Step Forward</button>
-        </div>
-        <div id="menu">
-            <label for="algo">Algorithm:</label>
-                <select id="algo">
-                    <option value="bubble">Bubble Sort</option>
-                    <option value="selection">Selection Sort</option>
-                    <option value="insertion">Insertion Sort</option>
-                    <option value="merge">Merge Sort</option>
-                    <option value="quick">Quick Sort</option>
-                </select>
-        </div>
+            <div id="btn-d">
+                <button class="btn1" onclick="randomArray()" style="background-color: #3b82f6 ;">Generate New Array</button>
+                <button class="btn1" onclick="algoselct()" style="background-color: #3b82f6 ;">Start Visualization</button>
+                <button class="btn1">Pause/Resume</button>
+                <button class="btn1" onclick="rst()">Reset</button>
+                <button class="btn1">Step Forward</button>
+            </div>
+            <div id="menu">
+                <label for="algo">Algorithm:</label>
+                    <select id="algo">
+                        <option value="bubble">Bubble Sort</option>
+                        <option value="selection">Selection Sort</option>
+                        <option value="insertion">Insertion Sort</option>
+                        <option value="merge">Merge Sort</option>
+                        <option value="quick">Quick Sort</option>
+                    </select>
+            </div> 
         </div>
         <div id="display">
 
+        </div>
+        <div id="exp">
         </div>
     </main>
 <script src="index.js"></script>    
