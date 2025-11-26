@@ -38,6 +38,8 @@ function algoselct(){
         bubblesrt();
     }else if(algo.value=="selection"){
         selectionsrt(arrRand);
+    }else if(algo.value=="insertion"){
+        insertsort()
     }
 }
 function rst(){

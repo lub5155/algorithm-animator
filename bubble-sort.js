@@ -14,34 +14,57 @@ async function bubblesrt(){
         }
     }
 }
-function renderBars(arr,y=[],str){
-    displayDiv.innerHTML = '' 
-    arrRand.forEach((value,index) => {
-        const bar = document.createElement('div')
-        bar.className = 'array-bar'
-        bar.style.height = `${value+100}px`
-        bar.textContent=value
-        if(str=="compared"){
-          if (y[0]==index) {
-            bar.style.backgroundColor = '#3bbb09ff'; 
-        } else if(y[1]==index) {
-            bar.style.backgroundColor = '#ef4444'; 
+function renderBars(arr, y = [], str) {
+    displayDiv.innerHTML = '';
+    arr.forEach((value, index) => {
+        const bar = document.createElement('div');
+        bar.className = 'array-bar';
+        bar.style.height = `${value + 100}px`;
+        bar.textContent = value;
+        
+        if (str == "compared") {
+            if (y[0] == index) {
+                bar.style.backgroundColor = '#3bbb09ff'; 
+            } else if (y[1] == index) {
+                bar.style.backgroundColor = '#ef4444'; 
+            }
+        } else if (str == "comparing") {
+            if (y.includes(index)) {
+                bar.style.backgroundColor = '#58a3d8'; 
+            }
+        } else if (str == "comparings") {
+            if (y[0] == index) {
+                bar.style.backgroundColor = '#fbff8bff'; 
+            } else if (y[1] == index) {
+                bar.style.backgroundColor = '#58a3d8'; 
+            }
         }
+        else if (str == "current") {
+            if (y.includes(index)) {
+                bar.style.backgroundColor = '#ef4444'; 
+            }
+        } else if (str == "shifting") {
+            if (y.includes(index)) {
+                bar.style.backgroundColor = '#f59e0b'; 
+            }
+        } else if (str == "shifted") {
+            if (y.includes(index)) {
+                bar.style.backgroundColor = '#dc2626';
+            }
+        } else if (str == "inserted") {
+            if (y.includes(index)) {
+                bar.style.backgroundColor = '#8b5cf6';
+            }
+        } else if (str == "sorted") {
+            if (y.includes(index)) {
+                bar.style.backgroundColor = '#8b5cf6'; 
+            } else {
+                bar.style.backgroundColor = '#06d6a0'; 
+            }
+        } else {
+            bar.style.backgroundColor = '#06d6a0';
         }
-        if(str=="comparing"){
-          if (y[0]==index) {
-            bar.style.backgroundColor = '#58a3d8'; 
-        } else if(y[1]==index) {
-            bar.style.backgroundColor = '#58a3d8'; 
-        }
-        }
-         if(str=="comparings"){
-          if (y[0]==index) {
-            bar.style.backgroundColor = '#fbff8bff'; 
-        } else if(y[1]==index) {
-            bar.style.backgroundColor = '#58a3d8'; 
-        }
-        }
-        displayDiv.appendChild(bar)
-})
+        
+        displayDiv.appendChild(bar);
+    });
 }

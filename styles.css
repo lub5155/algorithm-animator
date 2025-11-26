@@ -21,7 +21,7 @@ header{
     border-radius: 20px;
     cursor: pointer;
     background-color: #8b5cf6;
-    border: 1px solid  #f8fafc;
+    border: 0.5px solid  #76b1e5;
     color: #f8fafc;
 }
 #algo{
@@ -57,4 +57,7 @@ header{
     background-color: #06d6a0;
     flex:1;
     min-width:30px;
+}
+.slider input{
+    cursor: pointer;
 }
