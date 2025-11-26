@@ -23,9 +23,9 @@ function renderBars(arr,y=[],str){
         bar.textContent=value
         if(str=="compared"){
           if (y[0]==index) {
-            bar.style.backgroundColor = '#ef4444'; 
-        } else if(y[1]==index) {
             bar.style.backgroundColor = '#3bbb09ff'; 
+        } else if(y[1]==index) {
+            bar.style.backgroundColor = '#ef4444'; 
         }
         }
         if(str=="comparing"){
